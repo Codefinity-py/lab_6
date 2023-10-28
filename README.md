@@ -1,5 +1,5 @@
 # lab_6
-Слідуйте [інструкції](https://docs.google.com/document/d/1jHZogGJMYTCvN9Sp9LHqofXA2w5t9sGsEdBk-f5Cjwk/edit?usp=sharing) для виконання завдання.
+Слідуйте [інструкції](https://dopcs.google.com/document/d/1jHZogGJMYTCvN9Sp9LHqofXA2w5t9sGsEdBk-f5Cjwk/edit?usp=sharing) для виконання завдання.
 
 Обов'язково встанови віртуальне оточення як в інструкції.
 
