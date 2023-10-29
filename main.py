@@ -5,9 +5,6 @@
 # а велосипед - "кількість педалей". Створіть об'єкти для кожного підкласу,
 # змініть їх атрибути та викличте метод "прискорити" для кожного.
 
-# from abc import ABC, abstractclassmethod
-
-
 class Transport():
     def __init__(self, speed, power):
         self.speed = speed
