@@ -5,6 +5,28 @@
 # а велосипед - "кількість педалей". Створіть об'єкти для кожного підкласу,
 # змініть їх атрибути та викличте метод "прискорити" для кожного.
 
-class Transport:
-    # введіть свій код тут
-    pass
+class vehicle:
+   def __init__(self, speed, power):
+      self.speed = speed
+      self.power = power
+   def speed_up(self, speed_up):
+      self.speed_up += speed_up
+
+class car(vehicle):
+   def __init__(self, speed, power, fuel): 
+      self.speed = speed
+      self.power = power
+      self.fuel = fuel
+   
+   def speed_up(self, speed_up):
+      self.speed_up += speed_up
+
+class bike(vehicle):
+   def __init__(self, speed, power, pedals):
+      self.speed = speed
+      self.power = power  
+      self.pedals = pedals
+   
+   def speed_up(self, speed_up):
+      self.speed_up += speed_up
+   pass
