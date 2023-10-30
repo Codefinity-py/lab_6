@@ -7,4 +7,34 @@
 
 class Transport:
     # введіть свій код тут
-    pass
+    speed = 0
+    power = 0
+    def accelerate(self, strength):
+        self.speed += strength
+
+    def __init__(self, speed, power):
+        self.speed = speed
+        self.power = power
+
+
+class Car(Transport):
+    fuel = ''
+
+    def __init__(self, speed, power, fuel):
+        super().__init__(speed, power)
+        self.fuel = fuel
+
+
+class Bicycle(Transport):
+    pedals = ''
+
+    def __init__(self, speed, power, pedals):
+        super().__init__(speed, power)
+        self.pedals = pedals
+
+
+auto1 = Car(10, 5, 'diesel')
+auto1.accelerate(5)
+cycle1 = Bicycle(1, 5, 2)
+auto1.accelerate(1)
+
