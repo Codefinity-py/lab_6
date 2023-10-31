@@ -24,7 +24,7 @@ class Car(Transport):
 
 class Bicycle(Transport):
     pedals = ''
-    def __init__(self,speed,power,pedals):
+    def __init__(self,speed,power,pedals = 2):
         super().__init__(speed, power)
         self.pedals = pedals
 
