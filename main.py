@@ -17,8 +17,8 @@ class Transport():
         self.power = power
 
 class Car(Transport):
-    fuel = ''
-    def __init__(self,speed,power,fuel):
+    fuel = 2
+    def __init__(self,speed,power,fuel = 2):
         super().__init__(speed, power)
         self.fuel = fuel
 
