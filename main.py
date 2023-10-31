@@ -8,17 +8,21 @@
 class Transport:
     # введіть свій код тут
     def __init__(self, speed, power):
+        # ініціалізую атрибути швидкості та потужності
         self.speed = speed
         self.power = power
 
     def accelerate(self, add_speed=0):
+        # інкрементую швидкість на величину прискорення, та якщо вона стала негативною, встановлюю її на 0
         self.speed = max(self.speed + add_speed, 0)
 
     def __str__(self):
         return f'Speed: {self.speed}, Power: {self.power}'
 
 class Car(Transport):
+    # вводжу атрибут палива
     def __init__(self, speed, power, fuel):
+        # ініціалізую атрибути швидкості, потужності та палива
         super().__init__(speed, power)
         self.fuel = fuel
 
@@ -26,7 +30,9 @@ class Car(Transport):
         return super().__str__() + f', Fuel: {self.fuel}'
 
 class Bicycle(Transport):
+    # вводжу атрибут кількості педалей
     def __init__(self, speed, power, pedals):
+        # ініціалізую атрибути швидкості, потужності та кількості педалей
         super().__init__(speed, power)
         self.pedals = pedals
 
