@@ -3,7 +3,7 @@
 # Кожен транспортний засіб повинен мати атрибути "швидкість" та "потужність", а також метод "прискорити",
 # який збільшує швидкість на певну величину. Автомобіль повинен мати додатковий атрибут "пальне",
 # а велосипед - "кількість педалей". Створіть об'єкти для кожного підкласу,
-# змініть їх атрибути та викличте метод "прискорити" для кожного.d
+# змініть їх атрибути та викличте метод "прискорити" для кожного.
 class Transport:
     # введіть # свій код тут
     def __init__(self, speed, power):
@@ -11,21 +11,22 @@ class Transport:
         self.power = power
     def accelerate(self, accelerateBy):
         self.speed += accelerateBy
+
+    def speed_plus(self):
+        self.speed += 30
     pass
 
 class Car(Transport):
     def __init__(self, speed, power, fuel):
        super().__init__(speed, power)
        self.fuel = fuel
-    def speed_plus(self):
-        self.speed += 30
+
 
 class Bicycle(Transport):
     def __init__(self, speed, power, pedals):
         super().__init__(speed, power)
         self.pedals = pedals
-    def speed_plus(self):
-        self.speed += 10
+
 
 
 BMW = Car(100, 150, 'Бензин')
