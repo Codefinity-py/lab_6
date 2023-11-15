@@ -7,4 +7,25 @@
 
 class Transport:
     # введіть свій код тут
-    pass
+    def __init__(self, speed, power):
+        self.speed = speed
+        self.power = power
+    def quickening(self, speed_up):
+      self.speed += speed_up
+
+class Car:
+   def __init__(self, speed, power, fuel): 
+      self.fuel = fuel
+
+class Bike:
+   def __init__(self, speed, power, pedali):
+      self.pedali = pedali
+
+BMV = Car(100, 150, 'Соляра')
+BMX = Bike(15, 20, 2)
+
+BMV.quickening(10)
+BMX.quickening(3)
+
+print(f"Car: spead = {BMV.speed}, fuel = {BMV.fuel}")
+print(f"Bike: spead = {BMX.speed}, pedali = {BMX.pedali}")
